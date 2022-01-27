@@ -14,7 +14,7 @@ Header {
   background-color: red;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 Header > div > p {
@@ -36,4 +36,6 @@ nav ul {
 }
 .desktop a {
   text-decoration: none;
+  color: white;
+  font-size: 17px;
 }
