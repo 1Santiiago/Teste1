@@ -1,12 +1,14 @@
 import "./styles.css";
-import React from "react";
-import Header from "../componentes/Header";
-import Formula from "../componentes/Formula";
+import React, { useState } from "react";
+
 const app = () => {
+  // aprendendo a gerenciar estados (states)
+  const [ativo, setAtivo] = useState(true);
   return (
     <div>
-      <Header />
-      <Formula />
+      <button onClick={() => setAtivo(!ativo)}>
+        {ativo ? "Botão Ativo" : "Botão Inativo"}
+      </button>
     </div>
   );
 };
